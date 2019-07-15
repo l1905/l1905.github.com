@@ -4,7 +4,7 @@
 # ---------------------------------------------------------------
 
 # Site
-title: 自留地
+title: 记录生活
 subtitle:
 description: litongxue's blog
 author: litongxue
@@ -373,7 +373,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 5f5f7f9517b8ded8553d0fdce1e2e54a
 
 # Duoshuo ShortName
 #duoshuo_shortname:
