@@ -1,6 +1,6 @@
 ---
-title: 针对git之对revert的revert操作记录
-description: git对revert进行revert操作
+title: 针对git对commit丢失进行revert找回操作
+description: git对commit丢失进行revert找回操作
 categories:
  - 开发常见问题解决
 tags:
