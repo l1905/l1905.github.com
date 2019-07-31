@@ -51,6 +51,11 @@ git push
 ```
 
 
+## 经验总结
+
+revert操作会丢失提交记录， 切记要小心
+
+
 ## 参考资料
 
 1. https://stackoverflow.com/questions/7099833/how-to-revert-a-merge-commit-thats-already-pushed-to-remote-branch
