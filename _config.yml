@@ -6,7 +6,7 @@
 # Site
 title: 生活的自留地
 subtitle:
-description: litongxue的博客，记录技术，生活，感悟，理解，实践，循环往复。
+description: 生活的自由地,litongxue的博客，记录技术，生活，感悟，理解，实践，循环往复。
 author: litongxue
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
@@ -79,7 +79,7 @@ plugins:
 favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Jekyll, NexT"
+keywords: "litongxue的博客, 生活的自由地"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
