@@ -381,7 +381,7 @@ baidu_analytics: 5f5f7f9517b8ded8553d0fdce1e2e54a
 # Disqus
 disqus:
   enable: false
-  shortname:
+  shortname: l1905-github-io
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
@@ -431,7 +431,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC80NTgxMy8yMjMyNA==
 
 # Support for gitalk comments system.
 gitalk:
