@@ -13,6 +13,9 @@ tags:
 
 ## 理解
 
+实践源码： https://github.com/l1905/golang_daily_tools/blob/master/channel_and_select/main.go
+
+
 Channel可以作为一个先入先出(FIFO)的队列。 可以将channel 细化为以下三个流程。
 
 1. 定义channel
