@@ -381,6 +381,80 @@ redis协议参考：
 
 使用 `jquery.graphviz.svg` 可以实现调用图的动态交互
 
+简单实用原生协议实现一个`set` `get`方法， 加深下协议理解
+
+```go
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "log"
+    "net"
+    "time"
+)
+
+// 简单构造redis协议
+func main() {
+    // 1. 建立请求
+    proto := "tcp"
+    host := "127.0.0.1:6379"
+    fmt.Println("hello world")
+    // 建立连接
+    conn, err := net.Dial(proto, host)
+    defer conn.Close()
+
+    var br *bufio.Reader
+    var bw *bufio.Writer
+
+    if err != nil {
+        log.Println(err)
+
+    } else {
+        // 设置读写实例
+        br = bufio.NewReader(conn)
+        bw = bufio.NewWriter(conn)
+        // set redigo foobar
+        // 构造写命令 set redigo "foobar" *总数\r\n{set长度}\r\nset\r\n{redigo长度}\r\n{foobar长度}\r\nfoobar\r\n
+        bw.WriteString("*3\r\n$3\r\nset\r\n$6\r\nredigo\r\n$6\r\nfoobar\r\n")
+        // 刷到网络
+        bw.Flush()
+
+        // 先不解析返回值， 只是打印返回值
+        data, err := br.ReadSlice('\n')
+        if err != nil {
+            fmt.Print(err)
+        } else {
+            fmt.Print(string(data))
+            // +OK
+        }
+
+        // 构造读取方法
+        bw.WriteString("*2\r\n$3\r\nget\r\n$6\r\nredigo\r\n")
+        bw.Flush()
+
+        data, err = br.ReadSlice('\n')
+        if err != nil {
+            fmt.Print(err)
+        } else {
+            // 获取长度$6
+            fmt.Print(string(data))
+
+            // 获取第二个字符
+            // foobar
+            data, err = br.ReadSlice('\n')
+            fmt.Println(string(data))
+            // +OK
+        }
+
+    }
+
+    // 两秒后自动退出
+    time.Sleep(time.Second*2)
+
+}
+
+```
 
 
 
