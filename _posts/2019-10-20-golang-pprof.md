@@ -49,9 +49,13 @@ defer pprof.StopCPUProfile()
 内存性能分析方式
 
 ```go
-memProfile, _ := os.Create("mem_profile")
-defer memProfile()
-pprof.WriteHeapProfile(memProfile)
+... (业务逻辑)
+// 需放到进程结尾处，放到程序开头，不生效
+// 内存分析
+//memProfile, _ := os.Create("mem_job_profile")
+//defer memProfile.Close()
+//runtime.GC()
+//pprof.WriteHeapProfile(memProfile)
 ```
 
 
@@ -63,7 +67,7 @@ go tool pprof -http=":8081" [binary] [profile]
 
 会自动在浏览器打开 `http://localhost:8081/ui/`, 数据可视化。
 
-我们可以通过， 图， 火焰图， top图， peek图进行各个类别的分析
+我们可以通过， 图， 火焰图， top图， peek图进行各个类别的分析, 更倾向于使用或沿途分析问题
 
 
 #### Top 概念截图
