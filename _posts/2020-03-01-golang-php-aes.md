@@ -2,12 +2,12 @@
 title: golang,php aes-cfb加密互转
 description: golang,php,python aes-cfb加密互转
 categories:
- - php
- - golang
  - python
+ - golang
+ - php
 tags:
- - aes
- - 加密
+ - aes-cfb-256
+ - 加解密
 ---
 
 
