@@ -4,7 +4,7 @@ description: golang,php,python aes-cfb加密互转
 categories:
  - php
  - golang
- -python
+ - python
 tags:
  - aes
  - 加密
