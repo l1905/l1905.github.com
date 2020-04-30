@@ -59,5 +59,6 @@ go tool pprof -http=":8081" ~/Downloads/pprof.web-user-dc.samples.cpu.003.pb.gz
 1. https://github.com/Shopify/sarama/issues/1358
 2. https://github.com/Shopify/sarama/issues/1321
 3. http://lday.me/2017/09/02/0012_a_memory_leak_detection_procedure/
+4. https://zhuanlan.zhihu.com/p/37405836
 
 
