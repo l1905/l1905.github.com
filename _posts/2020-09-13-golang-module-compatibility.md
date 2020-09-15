@@ -1,6 +1,6 @@
 ---
-title: [翻译]golang项目兼容适配讨论
-description: [翻译]golang项目兼容适配讨论
+title: (翻译)golang项目兼容适配讨论
+description: (翻译)golang项目兼容适配讨论
 categories:
  - golang
  - 模块开发
@@ -11,7 +11,7 @@ tags:
 ---
 
 
-# [翻译]golang项目兼容适配讨论
+## (翻译)golang项目兼容适配讨论
 
 
 ## 背景
@@ -101,6 +101,7 @@ func Listen(network, address string) (Listener, error)
 
 1. 传递`context 参数
 2. 允许调用者提供一个"控制函数" 在创建之后，绑定之前，去调整 原生连接(raw connection) 
+
 
 因此 需要一个新函数，接收`context`， 网络，地址 和一个控制函数。包作者增加了一个 [ListenConfig](https://pkg.go.dev/net@go1.11?tab=doc#ListenConfig) 结构体, 以后可以方便增加更多的可选配置， 而不需要重新定义冗长的新的对外函数， 为ListenConfig增加一个`Listen`方法。
 
