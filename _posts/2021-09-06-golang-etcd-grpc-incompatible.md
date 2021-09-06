@@ -49,7 +49,9 @@ go: github.com/coreos/bbolt@v1.3.6: parsing go.mod etcd 3.5
 import "go.etcd.io/etcd/clientv3" 修改为  import "go.etcd.io/etcd/client/v3"
 ```
 
+## 参考文章
 
+1. https://chunlife.top/2021/06/17/etcd%E7%BB%88%E4%BA%8E%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81%E4%BA%86/
 
 
 
