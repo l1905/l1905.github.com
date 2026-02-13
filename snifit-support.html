@@ -1,0 +1,316 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SniFit 支持 | Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 50px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo h1 {
+            font-size: 2.5em;
+            color: #1d1d1f;
+        }
+        .logo p {
+            color: #666;
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+        h2 {
+            color: #333;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        h2:first-of-type {
+            margin-top: 20px;
+        }
+        h3 {
+            color: #007aff;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .highlight {
+            background: #f5f5f7;
+            border-left: 4px solid #007aff;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .feature-box {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .feature-box h4 {
+            color: #007aff;
+            margin-bottom: 10px;
+        }
+        .shortcut {
+            display: inline-block;
+            background: #eee;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.95em;
+            margin: 2px;
+        }
+        .faq-item {
+            margin-bottom: 25px;
+        }
+        .faq-item strong {
+            color: #333;
+        }
+        .contact {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .contact a {
+            color: #007aff;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.9em;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-switch a {
+            color: #007aff;
+            text-decoration: none;
+            padding: 5px 15px;
+            border: 1px solid #007aff;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .lang-switch a:hover {
+            background: #007aff;
+            color: white;
+        }
+        .section-en {
+            display: none;
+        }
+        .nav-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-links a {
+            color: #007aff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="javascript:void(0)" onclick="toggleLang()">English / 中文</a>
+        </div>
+        
+        <div class="logo">
+            <h1>SniFit</h1>
+            <p>等比截图工具 | Screenshot Tool</p>
+        </div>
+
+        <!-- 中文版本 -->
+        <div class="section-cn">
+            <h2>产品支持</h2>
+            <p>欢迎使用 SniFit！这里提供使用帮助和常见问题解答。</p>
+
+            <h2>功能介绍</h2>
+            <p>SniFit 是一款专为 macOS 设计的等比截图工具，帮助您快速截取特定比例的屏幕区域。</p>
+            
+            <div class="feature-box">
+                <h4>主要功能</h4>
+                <ul>
+                    <li><strong>等比截图</strong> - 支持 16:9、4:3、1:1 等常用比例</li>
+                    <li><strong>自定义比例</strong> - 可以设置任意宽高比</li>
+                    <li><strong>快捷键支持</strong> - 全局快捷键快速启动截图</li>
+                    <li><strong>标注功能</strong> - 截图后可添加文字、箭头、马赛克等标注</li>
+                    <li><strong>滚动截图</strong> - 支持长页面滚动截图</li>
+                    <li><strong>文字提取</strong> - OCR 识别截图中的文字</li>
+                </ul>
+            </div>
+
+            <h2>常见问题</h2>
+            
+            <div class="faq-item">
+                <h3>Q: 如何授予屏幕录制权限？</h3>
+                <p>首次使用时，系统会提示需要屏幕录制权限。请前往：</p>
+                <p><strong>系统设置 → 隐私与安全性 → 屏幕录制</strong>，然后勾选 SniFit。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: 如何更改截图快捷键？</h3>
+                <p>点击菜单栏图标，选择「偏好设置」或「快捷键设置」，即可自定义全局快捷键。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: 截图保存在哪里？</h3>
+                <p>默认情况下，截图会复制到剪贴板。您也可以在设置中选择自动保存到指定文件夹。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: 支持哪些 macOS 版本？</h3>
+                <p>SniFit 支持 macOS 11.5 (Big Sur) 及以上版本。</p>
+            </div>
+
+            <h2>快捷键参考</h2>
+            <div class="feature-box">
+                <ul>
+                    <li><span class="shortcut">Esc</span> - 取消截图</li>
+                    <li><span class="shortcut">Enter</span> - 确认截图</li>
+                    <li><span class="shortcut">Space</span> - 切换比例</li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h2 style="margin-top: 0; border: none;">联系我们</h2>
+                <p>如果您遇到问题或有任何建议，欢迎通过以下方式联系我们：</p>
+                <p>📧 邮箱：<a href="mailto:1905jobs@gmail.com">1905jobs@gmail.com</a></p>
+                <p>我们通常会在 1-2 个工作日内回复。</p>
+            </div>
+
+            <div class="nav-links">
+                <a href="/snifit-privacy">隐私政策</a>
+            </div>
+        </div>
+
+        <!-- English Version -->
+        <div class="section-en">
+            <h2>Product Support</h2>
+            <p>Welcome to SniFit! Here you'll find help and answers to common questions.</p>
+
+            <h2>Features</h2>
+            <p>SniFit is a screenshot tool designed for macOS that helps you capture screen areas with specific aspect ratios.</p>
+            
+            <div class="feature-box">
+                <h4>Key Features</h4>
+                <ul>
+                    <li><strong>Aspect Ratio Screenshots</strong> - Support for 16:9, 4:3, 1:1 and other common ratios</li>
+                    <li><strong>Custom Ratios</strong> - Set any custom aspect ratio</li>
+                    <li><strong>Hotkey Support</strong> - Global hotkeys for quick screenshot capture</li>
+                    <li><strong>Annotations</strong> - Add text, arrows, mosaic and other annotations after capture</li>
+                    <li><strong>Scrolling Capture</strong> - Capture long scrolling pages</li>
+                    <li><strong>Text Extraction</strong> - OCR to recognize text in screenshots</li>
+                </ul>
+            </div>
+
+            <h2>FAQ</h2>
+            
+            <div class="faq-item">
+                <h3>Q: How do I grant screen recording permission?</h3>
+                <p>On first use, the system will prompt for screen recording permission. Please go to:</p>
+                <p><strong>System Settings → Privacy & Security → Screen Recording</strong>, then enable SniFit.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: How do I change the screenshot hotkey?</h3>
+                <p>Click the menu bar icon, select "Preferences" or "Hotkey Settings" to customize your global hotkeys.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: Where are screenshots saved?</h3>
+                <p>By default, screenshots are copied to the clipboard. You can also configure automatic saving to a specific folder in settings.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: Which macOS versions are supported?</h3>
+                <p>SniFit supports macOS 11.5 (Big Sur) and later.</p>
+            </div>
+
+            <h2>Keyboard Shortcuts</h2>
+            <div class="feature-box">
+                <ul>
+                    <li><span class="shortcut">Esc</span> - Cancel screenshot</li>
+                    <li><span class="shortcut">Enter</span> - Confirm screenshot</li>
+                    <li><span class="shortcut">Space</span> - Switch aspect ratio</li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h2 style="margin-top: 0; border: none;">Contact Us</h2>
+                <p>If you encounter any issues or have suggestions, please contact us:</p>
+                <p>📧 Email: <a href="mailto:1905jobs@gmail.com">1905jobs@gmail.com</a></p>
+                <p>We typically respond within 1-2 business days.</p>
+            </div>
+
+            <div class="nav-links">
+                <a href="/snifit-privacy">Privacy Policy</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 SniFit. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleLang() {
+            var cn = document.querySelector('.section-cn');
+            var en = document.querySelector('.section-en');
+            if (cn.style.display === 'none') {
+                cn.style.display = 'block';
+                en.style.display = 'none';
+            } else {
+                cn.style.display = 'none';
+                en.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
